@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block css %}
+    <link rel="stylesheet" href="{% static "deps/css/my_footer_css.css" %}">
+{% endblock  %}
+
+
+{% block modal_cart %}
+{% include "includes/cart_button.html" %}
+{% endblock %}
+
+
+{% block content %}
+    <div class="mt-5 pt-3 bg-white custom-shadow rounded">
+        <h2 class="m-3"><strong>{{ content }}</strong></h2>
+            <p class="m-3" font>
+                Вы можете связаться с нами по следующим контактным данным:<br/>
+            <br/>
+                <b>Адрес:</b> ул. Первомайская, д. 10, г. Новый город<br/>
+                <b>Телефон:</b> +7 (123) 456-78-90<br/>
+                <b>Электронная почта:</b> info@prestige-mebel.ru<br/>
+            <br/>
+                Наши часы работы:<br/>
+                - Понедельник-пятница: с 9:00 до 20:00<br/>
+                - Суббота-воскресенье: с 10:00 до 18:00<br/>
+            <br/>
+                Мы всегда рады видеть вас в нашем магазине! Наш персонал сделает все возможное,<br/>
+                чтобы сделать ваше покупательское путешествие комфортным и приятным.<br/>
+                Благодаря безупречному качеству и эксклюзивным дизайнам нашей мебели,<br/>
+                ваш дом станет настоящим проявлением элегантности и стиля.<br/>
+            <br/>
+                Свяжитесь с нами прямо сейчас и разместите ваш заказ или задайте нам любые<br/> 
+                интересующие вопросы. Мы гарантируем быструю и качественную обработку всей информации,<br/>
+                а также оперативную доставку покупок прямо к вам домой.<br/>
+            <br/>
+                Мебельный магазин <b>Prestige</b> – ваш путь к идеальному дому!<br/>
+            <br/>
+        </p>
+    </div>
+{% endblock  %}
+
+
+{% block footer %}
+<footer class="py-4 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Prestige 2024</p>
+    </div>
+</footer>
+{% endblock  %}

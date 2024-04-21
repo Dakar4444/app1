@@ -27,7 +27,7 @@ def catalog(request, category_slug=None):
     paginator = Paginator(goods, 6)
     current_page = paginator.page(int(page))
     context = {
-        "title": "Home - Каталог",
+        "title": "Prestige - Каталог",
         "goods": current_page,
         "slug_url": category_slug
     }
